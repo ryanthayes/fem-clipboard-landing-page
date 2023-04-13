@@ -115,6 +115,7 @@ video {
     }
 
     .primary-btn {
+        cursor: pointer;
         padding: .75em 1.5em;
         margin: 1rem .375rem;
         color: var(--clr-neutral-100);
@@ -124,6 +125,10 @@ video {
         width: 100%;
     }
     
+    .primary-btn:hover,
+    .primary-btn:focus {
+        opacity: 80%;
+    }
     .site-logo {
         margin-bottom: 5rem;
     }
@@ -158,6 +163,11 @@ video {
     }
     .footer__links a {
         color: var(--clr-neutral-400);
+    }
+
+    .footer__links a:hover,
+    .footer__links a:focus {
+        color: var(--clr-primary-400);
     }
     .footer__social {
         display: flex;

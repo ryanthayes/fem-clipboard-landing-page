@@ -106,7 +106,7 @@ video {
     }
     
     .container {
-        padding: 0 1.125rem;
+        padding: 0 1.2rem;
         margin: 1.875rem auto;
         max-width: 75rem;
     }
@@ -115,7 +115,7 @@ video {
     }
 
     .primary-btn {
-        padding: .75rem 2.5rem;
+        padding: .75em 1.5em;
         margin: 1rem .375rem;
         color: var(--clr-neutral-100);
         font-weight: var(--fw-semi-bold);
@@ -132,6 +132,9 @@ video {
         align-self: start;
     }
     
+    .partners {
+        margin-top: 10rem;
+    }
     .partners__list {
         gap: 4rem;
     }
@@ -250,6 +253,9 @@ video {
         --fs-600: 2rem;
         --fs-700: 2.5rem;
     }
+    .container-small {
+        max-width: 62ch;
+    }
     
     .computer__img,
     .computer__list  {
@@ -261,6 +267,15 @@ video {
     .computer__list {
         text-align: left;
         transform: translateX(-10rem);
+    }
+    .workflow__list {
+        margin-top: 3rem;
+    }
+    .partners {
+        margin-top: 0;
+    }
+    footer .container {
+        flex-direction: row;
     }
 
     .footer__links {
@@ -274,7 +289,7 @@ video {
         grid-auto-columns: 1fr;
         align-items: center;
         gap: 2rem;
-        padding: 5rem 1rem;
+        padding: 1rem 1rem;
     }
     .three-columns {
         display: grid;

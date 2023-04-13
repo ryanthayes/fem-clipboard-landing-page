@@ -20,17 +20,21 @@
 <body>
 
   <!-- header section -->
-  <header class="header pt-5">
+  <header class="header mb-6">
 
-    <div class="container-small flex flex-columns">
+    <article class="container container-small flex flex-center">
       <img class="site-logo" src="images/logo.svg" alt="">
-      <h1 class="fs-700 fw-bold">A history of everything you copy</h1>
-      <p class="mb-2">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
-      <div class="buttons-container grid">
-        <button class="primary-btn ios mb-1">Download for iOS</button>
+      
+      <div class="container-small">
+        <h1 class="fs-700 fw-bold">A history of everything you copy</h1>
+        <p class="">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+      </div>
+      
+      <div class="pt-2">
+        <button class="primary-btn ios">Download for iOS</button>
         <button class="primary-btn macos">Download for Mac</button>
       </div>
-    </div>
+    </article>
    
   </header>
     
@@ -38,17 +42,20 @@
   <main>
 
     <!-- computer section -->
-    <section class="container-small flex flex-center flex-columns">
+    <section class="container mb-6">
       
-      <div class="mb-4">
+      <div class="container container-small">
         <h2 class="fs-600 fw-bold">Keep track of your snippets</h2>
         <p>Clipboard instantly stores any item you copy in the cloud, 
           meaning you can access your snippets immediately on all your 
           devices. Our Mac and iOS apps will help you organize everything.</p>
       </div>
       
-      <div class="grid">
-        <img class="" src="images/image-computer.png" alt="computer">
+      <div class="computer container flex flex-center pt-3">
+        <div>
+          <img class="computer__img" src="images/image-computer.png" alt="computer">
+        </div>
+        
         <ul class="computer__list pt-3">
           <li class="mb-3">
             <h3 class="fs-500 fw-bold">Quick Search</h3>
@@ -58,60 +65,65 @@
             <h3 class="fs-500 fw-bold">iCloud Sync</h3>
             <p>Instantly saves and syncs snippets across all your devices.</p>
           </li>
-          <li class="mb-3">
+          <li class="">
             <h3 class="fs-500 fw-bold">Complete History</h3>
             <p>Retrieve any snippets from the first moment you started using the app.</p>
           </li>
         </ul>
-      </div>
+        
+        
+        </div>
     </section>
     
-    <!-- devices section -->
-    <section class="container-small flex flex-columns flex-center">
+    <!-- mobile section -->
+    <section class="mobile container container-small pt-5 mb-6">
       <h2 class="fs-600 fw-bold">Access Clipboard anywhere</h2>
       <p class="">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-      <img class="mt-4" src="images/image-devices.png" alt="">
+      <div class="pt-5">
+        <img class="mobile__img" src="images/image-devices.png" alt="">
+      </div>
+      
     </section>
 
     <!-- workflow section -->
-    <section class="container-small">
+    <section class="workflow container container-small mb-8">
       <h2 class="fs-600 fw-bold">Supercharge your workflow</h2>
       <p>We’ve got the tools to boost your productivity.</p>
-      <ul class="workflow__list three-col">
-        <li class="workflow__list-items flex flex-columns flex-center">
-          <img class="workflow__icon mt-4 mb-2" src="images/icon-blacklist.svg" alt="" >
-          <h3 class="workflow__subtitle fs-500 fw-bold">Create blacklists</h3>
+      <ul class="workflow__list even-columns pt-5">
+        <li class="flex flex-columns flex-center mb-4">
+          <img class="pb-3" src="images/icon-blacklist.svg" alt="" >
+          <h3 class="fs-500 fw-bold">Create blacklists</h3>
           <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
         </li>
-        <li class="workflow__list-items flex flex-columns flex-center">
-          <img class="workflow__icon mt-4 mb-2" src="images/icon-text.svg" alt="">
-          <h3 class="workflow__subtitle fs-500 fw-bold">Plain text snippets</h3>
+        <li class="flex flex-columns flex-center mb-4">
+          <img class="pb-3" src="images/icon-text.svg" alt="">
+          <h3 class="fs-500 fw-bold">Plain text snippets</h3>
           <p> Remove unwanted formatting from copied text for a consistent look.</p>
         </li>
-        <li class="workflow__list-items flex flex-columns flex-center">
-          <img class="workflow__icon mt-4 mb-2" src="images/icon-preview.svg" alt="">
-          <h3 class="workflow__subtitle fs-500 fw-bold">Sneak preview</h3>
+        <li class="flex flex-columns flex-center">
+          <img class="pb-3" src="images/icon-preview.svg" alt="">
+          <h3 class="fs-500 fw-bold">Sneak preview</h3>
           <p>Quick preview of all snippets on your Clipboard for easy access.</p>
         </li>
       </ul>
     </section>
 
-    <!-- testimonials section -->
-    <section class="container center">
-      <ul class="flex flex-columns flex-center five-col">
-        <li class="mb-4"><img src="images/logo-google.png" alt="" class="testimonials__logo"></li>
-        <li class="mb-4"><img src="images/logo-ibm.png" alt="" class="testimonials__logo"></li>
-        <li class="mb-4"><img src="images/logo-microsoft.png" alt="" class="testimonials__logo"></li>
-        <li class="mb-4"><img src="images/logo-hp.png" alt="" class="testimonials__logo"></li>
-        <li class="mb-4"><img src="images/logo-vector-graphics.png" alt="" class="testimonials__logo"></li>
+    <!-- partners section -->
+    <section class="partners container mb-10">
+      <ul class="partners__list flex flex-columns flex-center even-columns">
+        <li class=""><img src="images/logo-google.png" alt="" class="partners__logo"></li>
+        <li class=""><img src="images/logo-ibm.png" alt="" class="partners__logo"></li>
+        <li class=""><img src="images/logo-microsoft.png" alt="" class="partners__logo"></li>
+        <li class=""><img src="images/logo-hp.png" alt="" class="partners__logo"></li>
+        <li class=""><img src="images/logo-vector-graphics.png" alt="" class="partners__logo"></li>
       </ul>
     </section>
 
     <!-- call to action section -->
-    <article class="container-small">
+    <article class="container container-small mb-10">
         <h2 class="fs-600 fw-bold">Clipboard for iOS and Mac OS</h2>
-        <p class="mb-2">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
-        <div class="buttons-container grid">
+        <p class="">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
+        <div class="pt-2">
           <button class="primary-btn ios">Download for iOS</button>
           <button class="primary-btn macos">Download for Mac</button>
         </div>
@@ -123,11 +135,12 @@
   <!-- footer section -->
   <footer>
     
-    <div class="flex flex-columns flex-center">
-    
-        <img class="site__logo footer-logo mb-3" src="images/logo.svg" alt="">
-      
-        <ul class="secondary-nav grid .three-col mb-3">
+    <div class="container flex flex-columns flex-center space-around">
+        <div>
+          <img class="footer__logo" src="images/logo.svg" alt="">
+        </div>
+        
+        <ul class="footer__links">
           <li class=""><a href="#">FAQs</a></li>
           <li class=""><a href="#">Contact Us</a></li>
           <li class=""><a href="#">Privacy Policy</a></li>
@@ -135,10 +148,10 @@
           <li class=""><a href="#">Install Guide</a></li>
         </ul>
     
-        <ul class="social-list">
-          <li class="social-list__items"><img src="images/icon-facebook.svg" alt="" class="social-list__icons"></li>
-          <li class="social-list__items"><img src="images/icon-twitter.svg" alt="" class="social-list__icons"></li>
-          <li class="social-list__items"><img src="images/icon-instagram.svg" alt="" class="social-list__icons"></li>
+        <ul class="footer__social">
+          <li class=""><img src="images/icon-facebook.svg" alt="" class=""></li>
+          <li class=""><img src="images/icon-twitter.svg" alt="" class=""></li>
+          <li class=""><img src="images/icon-instagram.svg" alt="" class=""></li>
         </ul>
       
     </div>
